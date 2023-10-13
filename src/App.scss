@@ -1,0 +1,71 @@
+$dark-grey: #858585;
+$grey: #e8e9eb;
+$link-blue: #478bbf;
+$white: #ffffff;
+
+$gutter-s: 1rem;
+$gutter: 2rem;
+
+.file-system {
+    margin: auto;
+    width: 90%;
+
+    &__button {
+        &--reset {
+            background-color: transparent;
+            border: 0;
+            color: $link-blue;
+            font-size: 1rem;
+            padding: 0;
+
+            &:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__file-list {
+        border-spacing: 0;
+        gap: 0;
+        margin-block-end: $gutter;
+        max-width: 70rem;
+        table-layout: fixed;
+        width: 100%;
+
+        &__item {
+            &:hover {
+                background-color: $grey;
+            }
+        }
+
+        th {
+            color: $link-blue;
+            text-align: left;
+
+            &:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__folder {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__heading {
+        margin-block: $gutter;
+    }
+
+    &__search-input {
+        font-size: 1rem;
+        height: 2rem;
+        margin-block-end: $gutter;
+        max-width: 20rem;
+        padding-inline-start: 0.5rem;
+        width: 100%;
+    }
+}
